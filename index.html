@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World with Date and Time</title>
+    <script>
+        function displayDateTime() {
+            const currentDate = new Date();
+            const dateTimeString = currentDate.toLocaleString();
+            document.getElementById("date-time").textContent = dateTimeString;
+        }
+    </script>
+</head>
+<body onload="displayDateTime()">
+    <h1>Hello, NexTurn!</h1>
+    <p>Today's date and time: <span id="date-time"></span></p>
+</body>
+</html>
